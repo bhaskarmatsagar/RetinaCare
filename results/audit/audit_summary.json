@@ -1,0 +1,20 @@
+{
+  "total_files": 7183,
+  "total_images": 7094,
+  "total_labelled": 6003,
+  "duplicate_groups": 6119,
+  "conflict_groups": 184,
+  "sample_size": 500,
+  "split_distribution": {
+    "train": 350,
+    "test": 75,
+    "val": 75
+  },
+  "class_distribution_sample": {
+    "0": 308,
+    "2": 101,
+    "4": 33,
+    "1": 29,
+    "3": 29
+  }
+}

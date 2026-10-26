@@ -1,0 +1,112 @@
+{
+  "accuracy": 0.06666666666666667,
+  "balanced_accuracy": 0.2,
+  "qwk": 0.0,
+  "confusion_matrix": [
+    [
+      0,
+      0,
+      0,
+      0,
+      46
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      5
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      15
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      4
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      5
+    ]
+  ],
+  "per_class": {
+    "grade_0": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 46
+    },
+    "grade_1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 5
+    },
+    "grade_2": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 15
+    },
+    "grade_3": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 4
+    },
+    "grade_4": {
+      "precision": 0.06666666666666667,
+      "recall": 1.0,
+      "f1": 0.125,
+      "support": 5
+    }
+  },
+  "macro_f1": 0.025,
+  "weighted_f1": 0.008333333333333333,
+  "referable_dr": {
+    "sensitivity": 1.0,
+    "specificity": 0.0,
+    "precision": 0.32,
+    "roc_auc": 0.21813725490196076,
+    "pr_auc": 0.21789818917190623,
+    "counts": {
+      "tp": 24,
+      "fn": 0,
+      "fp": 51,
+      "tn": 0
+    },
+    "sensitivity_ci_95": [
+      1.0,
+      1.0
+    ]
+  },
+  "severe_recall": 0.0,
+  "proliferative_recall": 1.0,
+  "ordinal_error": {
+    "mean_absolute_error": 3.1066666666666665,
+    "share_off_ge_2": 0.88
+  },
+  "calibration": {
+    "ece": 0.13358312447865806,
+    "brier_score": 0.7999003748461615
+  },
+  "inference_time_sec_per_image": 0.041976984000066296,
+  "sample_count": 75,
+  "model_id": "E1",
+  "split": "test",
+  "temperature": 1.0,
+  "qwk_ci_95": [
+    0.0,
+    0.0
+  ]
+}

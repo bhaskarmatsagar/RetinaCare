@@ -1,0 +1,112 @@
+{
+  "accuracy": 0.7466666666666667,
+  "balanced_accuracy": 0.7472463768115942,
+  "qwk": 0.8572604289902783,
+  "confusion_matrix": [
+    [
+      40,
+      4,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      5,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      4,
+      4,
+      3,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      4,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      3
+    ]
+  ],
+  "per_class": {
+    "grade_0": {
+      "precision": 0.975609756097561,
+      "recall": 0.8695652173913043,
+      "f1": 0.9195402298850575,
+      "support": 46
+    },
+    "grade_1": {
+      "precision": 0.38461538461538464,
+      "recall": 1.0,
+      "f1": 0.5555555555555556,
+      "support": 5
+    },
+    "grade_2": {
+      "precision": 0.6666666666666666,
+      "recall": 0.26666666666666666,
+      "f1": 0.38095238095238093,
+      "support": 15
+    },
+    "grade_3": {
+      "precision": 0.4444444444444444,
+      "recall": 1.0,
+      "f1": 0.6153846153846154,
+      "support": 4
+    },
+    "grade_4": {
+      "precision": 0.5,
+      "recall": 0.6,
+      "f1": 0.5454545454545454,
+      "support": 5
+    }
+  },
+  "macro_f1": 0.603377465446431,
+  "weighted_f1": 0.7463963367411643,
+  "referable_dr": {
+    "sensitivity": 0.7916666666666666,
+    "specificity": 0.9607843137254902,
+    "precision": 0.9047619047619048,
+    "roc_auc": 0.9289215686274509,
+    "pr_auc": 0.9134283490070966,
+    "counts": {
+      "tp": 19,
+      "fn": 5,
+      "fp": 2,
+      "tn": 49
+    },
+    "sensitivity_ci_95": [
+      0.619,
+      0.938
+    ]
+  },
+  "severe_recall": 1.0,
+  "proliferative_recall": 0.6,
+  "ordinal_error": {
+    "mean_absolute_error": 0.3333333333333333,
+    "share_off_ge_2": 0.08
+  },
+  "calibration": {
+    "ece": 0.4580947021643321,
+    "brier_score": 0.6613077746636371
+  },
+  "inference_time_sec_per_image": 0.0749528880000192,
+  "sample_count": 75,
+  "model_id": "E2",
+  "split": "test",
+  "temperature": 1.0,
+  "qwk_ci_95": [
+    0.768,
+    0.92
+  ]
+}

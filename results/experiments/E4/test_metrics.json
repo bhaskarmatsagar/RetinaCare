@@ -1,0 +1,112 @@
+{
+  "accuracy": 0.6266666666666667,
+  "balanced_accuracy": 0.46521739130434786,
+  "qwk": 0.6483904094298343,
+  "confusion_matrix": [
+    [
+      38,
+      1,
+      2,
+      4,
+      1
+    ],
+    [
+      0,
+      2,
+      2,
+      1,
+      0
+    ],
+    [
+      3,
+      2,
+      3,
+      3,
+      4
+    ],
+    [
+      0,
+      0,
+      1,
+      2,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      3,
+      2
+    ]
+  ],
+  "per_class": {
+    "grade_0": {
+      "precision": 0.926829268292683,
+      "recall": 0.8260869565217391,
+      "f1": 0.8735632183908046,
+      "support": 46
+    },
+    "grade_1": {
+      "precision": 0.4,
+      "recall": 0.4,
+      "f1": 0.4,
+      "support": 5
+    },
+    "grade_2": {
+      "precision": 0.375,
+      "recall": 0.2,
+      "f1": 0.2608695652173913,
+      "support": 15
+    },
+    "grade_3": {
+      "precision": 0.15384615384615385,
+      "recall": 0.5,
+      "f1": 0.23529411764705882,
+      "support": 4
+    },
+    "grade_4": {
+      "precision": 0.25,
+      "recall": 0.4,
+      "f1": 0.3076923076923077,
+      "support": 5
+    }
+  },
+  "macro_f1": 0.41548384178951253,
+  "weighted_f1": 0.6476878604438354,
+  "referable_dr": {
+    "sensitivity": 0.7916666666666666,
+    "specificity": 0.803921568627451,
+    "precision": 0.6551724137931034,
+    "roc_auc": 0.886437908496732,
+    "pr_auc": 0.7962626619690728,
+    "counts": {
+      "tp": 19,
+      "fn": 5,
+      "fp": 10,
+      "tn": 41
+    },
+    "sensitivity_ci_95": [
+      0.619,
+      0.947
+    ]
+  },
+  "severe_recall": 0.5,
+  "proliferative_recall": 0.4,
+  "ordinal_error": {
+    "mean_absolute_error": 0.6533333333333333,
+    "share_off_ge_2": 0.2
+  },
+  "calibration": {
+    "ece": 0.35745500008265174,
+    "brier_score": 0.6979386471404662
+  },
+  "inference_time_sec_per_image": 0.07106805199990049,
+  "sample_count": 75,
+  "model_id": "E4",
+  "split": "test",
+  "temperature": 1.0,
+  "qwk_ci_95": [
+    0.465,
+    0.791
+  ]
+}

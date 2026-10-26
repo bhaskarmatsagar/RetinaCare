@@ -1,0 +1,15 @@
+Python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+TensorFlow: 2.21.0
+GPUs Available: 0 (CPU mode)
+OpenCV: 5.0.0
+NumPy: 2.4.6
+SciPy: 1.17.1
+Pandas: 3.1.0
+Scikit-Learn: 1.9.1
+Scikit-Image: 0.26.0
+Matplotlib: 3.11.2
+Pillow: 13.0.0
+ImageHash: 4.3.2
+PyYAML: 6.0.3
+ReportLab: 5.1.0
+PyTest: 9.1.1

@@ -1,0 +1,61 @@
+seed: 42
+paths:
+  data_root: "C:/Users/Bhaskar/OneDrive/Desktop/Retina care Dataset"   # read-only raw data
+  artifacts: "artifacts"
+  results: "results"
+sample:
+  enabled: true
+  size: 500
+  min_per_class: 20
+  split: {train: 0.70, val: 0.15, test: 0.15}
+dedup:
+  phash_size: 16
+  max_hamming: 6
+  verify_ncc_min: 0.95        # verification on 128x128 grayscale
+preprocess:
+  fov_threshold: 10           # on grayscale, then morphology cleanup
+  clf_size: 256               # input for grading
+  hires_size: 1024            # input for lesion segmentation
+  ben_graham: {enabled: true, sigma_frac: 0.03}   # sigma = sigma_frac * image width
+  clahe: {enabled: true, clip: 2.0, tile: 8}
+  median_ksize: 3
+  quality:
+    mode: "flag_only"         # flag_only | reject
+    pass_threshold: 0.50
+    weights: {sharpness: 0.35, illumination: 0.25, contrast: 0.20, fov_coverage: 0.20}
+anatomy:
+  method: "classical"
+  disc_diameter_frac_range: [0.06, 0.22]   # of FOV diameter
+  fovea_distance_dd_range: [2.0, 3.0]      # in optic-disc diameters
+lesion:
+  mode: "auto"                # auto | A | B  (auto decided in Phase 0)
+  patch_size: 256
+  infer_stride: 128
+  classes: ["MA", "HE", "EX", "SE"]
+  min_area_px: {MA: 3, HE: 20, EX: 8, SE: 30}
+grading:
+  input_size: 256
+  num_classes: 5
+  batch_size: 16
+  phase1: {epochs: 10, lr: 1.0e-3, frozen_backbone: true}
+  phase2: {max_epochs: 30, lr: 1.0e-5, unfreeze_last_layers: 20, early_stop_patience: 8}
+  label_smoothing: 0.05
+  referable_min_grade: 2
+safety:
+  low_confidence: 0.60
+  mismatch_lesion_area_frac_high: 0.0015    # lesion area / FOV area considered "substantial"
+  mismatch_lesion_area_frac_low: 0.0002     # considered "almost none"
+  border_cam_fraction_max: 0.35
+report:
+  pdf: true
+  language: "en"
+evaluation:
+  bootstrap_resamples: 1000
+  ci_level: 0.95
+train:
+  cpu_fallback:
+    enabled: true
+    phase1_epochs: 5
+    phase2_epochs: 10
+    lesion_stage1_epochs: 5
+    lesion_stage2_epochs: 15

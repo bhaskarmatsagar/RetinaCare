@@ -1,0 +1,123 @@
+{
+  "model_id": "E1",
+  "architecture": "grading_scratch_cnn",
+  "input_size": 256,
+  "adapter": "rescaling_0_1",
+  "temperature_T": 1.0,
+  "val_metrics": {
+    "accuracy": 0.06666666666666667,
+    "balanced_accuracy": 0.2,
+    "qwk": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        46
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        15
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        5
+      ]
+    ],
+    "per_class": {
+      "grade_0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 46
+      },
+      "grade_1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 4
+      },
+      "grade_2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 15
+      },
+      "grade_3": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5
+      },
+      "grade_4": {
+        "precision": 0.06666666666666667,
+        "recall": 1.0,
+        "f1": 0.125,
+        "support": 5
+      }
+    },
+    "macro_f1": 0.025,
+    "weighted_f1": 0.008333333333333333,
+    "referable_dr": {
+      "sensitivity": 1.0,
+      "specificity": 0.0,
+      "precision": 0.3333333333333333,
+      "roc_auc": 0.26080000000000003,
+      "pr_auc": 0.23557510469613432,
+      "counts": {
+        "tp": 25,
+        "fn": 0,
+        "fp": 50,
+        "tn": 0
+      },
+      "sensitivity_ci_95": [
+        1.0,
+        1.0
+      ]
+    },
+    "severe_recall": 0.0,
+    "proliferative_recall": 1.0,
+    "ordinal_error": {
+      "mean_absolute_error": 3.08,
+      "share_off_ge_2": 0.8666666666666667
+    },
+    "calibration": {
+      "ece": 0.13358103831609092,
+      "brier_score": 0.7998936518246573
+    },
+    "inference_time_sec_per_image": 0.08088168933347334,
+    "sample_count": 75,
+    "model_id": "E1",
+    "split": "val",
+    "temperature": 1.0,
+    "qwk_ci_95": [
+      0.0,
+      0.0
+    ]
+  },
+  "phase1_epochs": 5,
+  "phase2_epochs": 10,
+  "manifest_sha256": "LOCKED",
+  "limitations": "Single-dataset sample training, rare class uncertainty, research prototype."
+}
